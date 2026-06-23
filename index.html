@@ -353,6 +353,43 @@
       margin: 0 8px;
     }
 
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 253, 249, 0.72);
+      color: var(--taupe-dark);
+      vertical-align: middle;
+      transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+    }
+
+    .icon-link:hover {
+      background: var(--paper);
+      border-color: #cabaae;
+      transform: translateY(-1px);
+    }
+
+    .icon-link svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     @media (max-width: 760px) {
       .page {
         width: min(100% - 22px, 560px);
@@ -439,6 +476,11 @@
       .quiet a {
         display: block;
         margin: 8px 0 0;
+      }
+
+      .quiet .icon-link {
+        display: inline-flex;
+        margin: 14px 4px 0;
       }
     }
   </style>
@@ -564,8 +606,21 @@
     <p class="quiet">
       Not sure what to book?
       <a class="text-link" href="https://calendly.com/cali-guttman">View all appointment options</a>
-      <a class="text-link" href="mailto:cali.guttman@gmail.com">Email me</a>
-      <a class="text-link" href="https://www.instagram.com/caliguttman.rd/">Instagram</a>
+      <a class="icon-link" href="mailto:cali.guttman@gmail.com" aria-label="Email Cali">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3.5" y="5.5" width="17" height="13" rx="2"></rect>
+          <path d="m4.5 7 7.5 6 7.5-6"></path>
+        </svg>
+        <span class="sr-only">Email me</span>
+      </a>
+      <a class="icon-link" href="https://www.instagram.com/caliguttman.rd/" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.2"></rect>
+          <circle cx="12" cy="12" r="3.6"></circle>
+          <circle cx="16.8" cy="7.2" r="0.7" fill="currentColor" stroke="none"></circle>
+        </svg>
+        <span class="sr-only">Instagram</span>
+      </a>
     </p>
   </main>
 </body>
