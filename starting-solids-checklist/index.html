@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starting Solids Readiness Checklist | CG Nutrition</title>
+  <meta name="description" content="A quick gut-check for calmer, more confident starting solids.">
+  <meta property="og:title" content="Starting Solids Readiness Checklist">
+  <meta property="og:description" content="A quick gut-check for calmer, more confident starting solids.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cg-nutrition-booking.vercel.app/starting-solids-checklist/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Starting Solids Readiness Checklist">
+  <meta name="twitter:description" content="A quick gut-check for calmer, more confident starting solids.">
+  <style>
+    :root {
+      --cream: #f7f2eb;
+      --paper: #fffdf9;
+      --ink: #22201d;
+      --muted: #6f6860;
+      --line: #ded5ca;
+      --taupe: #8b7d6f;
+      --taupe-dark: #5e544c;
+      --soft: #eee5dc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(940px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 22px 0 42px;
+    }
+
+    .top {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 14px;
+    }
+
+    .logo {
+      width: 116px;
+      height: 116px;
+      object-fit: contain;
+    }
+
+    .hero {
+      text-align: center;
+      margin: 0 auto 26px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 0.98;
+      letter-spacing: 0;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-weight: 500;
+    }
+
+    .subtitle {
+      max-width: 720px;
+      margin: 14px auto 0;
+      color: var(--taupe-dark);
+      font-size: clamp(18px, 3vw, 30px);
+      font-weight: 600;
+      line-height: 1.22;
+    }
+
+    .workflow {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      padding: 26px 30px 30px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .step.support {
+      background: linear-gradient(135deg, #f3e8de, #e8ddd1);
+      border-color: #d8c8ba;
+    }
+
+    .heading {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .num {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border: 1.5px solid var(--taupe-dark);
+      background: rgba(255, 253, 249, 0.72);
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(19px, 3vw, 30px);
+      line-height: 1.08;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 38px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .support .checklist {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .checklist li {
+      display: grid;
+      grid-template-columns: 19px 1fr;
+      gap: 11px;
+      align-items: center;
+      color: var(--ink);
+      font-size: clamp(15px, 2.35vw, 22px);
+    }
+
+    .support .checklist li {
+      font-size: clamp(15px, 2.1vw, 19px);
+    }
+
+    .box {
+      width: 17px;
+      height: 17px;
+      border: 1.7px solid var(--taupe-dark);
+      background: var(--paper);
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding: 24px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .footer p {
+      max-width: 720px;
+      margin: 0 auto 10px;
+      color: var(--taupe-dark);
+      font-size: 16px;
+    }
+
+    .footer strong {
+      color: var(--ink);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      margin-top: 12px;
+      padding: 0 22px;
+      border-radius: 999px;
+      border: 1px solid var(--taupe-dark);
+      background: var(--taupe-dark);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .tiny {
+      margin-top: 11px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .back {
+      display: block;
+      margin: 18px auto 0;
+      color: var(--taupe-dark);
+      font-size: 14px;
+      font-weight: 650;
+      text-align: center;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        width: min(100% - 22px, 560px);
+        padding-top: 14px;
+      }
+
+      .logo {
+        width: 98px;
+        height: 98px;
+      }
+
+      .hero {
+        margin-bottom: 20px;
+      }
+
+      .step {
+        padding: 20px 16px 22px;
+      }
+
+      .heading {
+        gap: 11px;
+        margin-bottom: 15px;
+      }
+
+      .num {
+        width: 32px;
+        height: 32px;
+        font-size: 21px;
+      }
+
+      .checklist {
+        grid-template-columns: 1fr;
+        gap: 9px;
+      }
+
+      .checklist li {
+        grid-template-columns: 18px 1fr;
+        gap: 10px;
+      }
+
+      .box {
+        width: 16px;
+        height: 16px;
+      }
+
+      .footer {
+        padding: 20px 16px;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="top">
+      <a href="../" aria-label="CG Nutrition booking home">
+        <img class="logo" src="../assets/cg-nutrition-logo.png" alt="CG Nutrition">
+      </a>
+    </div>
+
+    <section class="hero">
+      <h1>Starting Solids Readiness Checklist</h1>
+      <p class="subtitle">A quick gut-check for calmer, more confident starting solids.</p>
+    </section>
+
+    <div class="workflow" aria-label="Starting solids checklist">
+      <section class="step">
+        <div class="heading">
+          <div class="num">1</div>
+          <h2>Baby Readiness</h2>
+        </div>
+        <ul class="checklist">
+          <li><span class="box"></span><span>Baby is around 4-6 months old</span></li>
+          <li><span class="box"></span><span>Baby can sit upright with support</span></li>
+          <li><span class="box"></span><span>Baby has steady head and neck control</span></li>
+          <li><span class="box"></span><span>Baby brings hands or toys to mouth</span></li>
+          <li><span class="box"></span><span>Baby shows curiosity around food</span></li>
+        </ul>
+      </section>
+
+      <section class="step">
+        <div class="heading">
+          <div class="num">2</div>
+          <h2>Mealtime Setup</h2>
+        </div>
+        <ul class="checklist">
+          <li><span class="box"></span><span>Baby has a safe, supported seat</span></li>
+          <li><span class="box"></span><span>I know safe shapes and textures</span></li>
+          <li><span class="box"></span><span>I know gagging vs. choking</span></li>
+          <li><span class="box"></span><span>I can stay calm if baby spits food out</span></li>
+          <li><span class="box"></span><span>I know early meals are for learning, not just intake</span></li>
+        </ul>
+      </section>
+
+      <section class="step support">
+        <div class="heading">
+          <div class="num">3</div>
+          <h2>Signs You’d Benefit From Support</h2>
+        </div>
+        <ul class="checklist">
+          <li><span class="box"></span><span>Baby is old enough to start, but you still feel unsure</span></li>
+          <li><span class="box"></span><span>Allergens feel confusing or scary</span></li>
+          <li><span class="box"></span><span>You’re not sure which feeding tools are actually necessary</span></li>
+          <li><span class="box"></span><span>You feel pressure to buy all the plates, spoons, cups, and gadgets</span></li>
+          <li><span class="box"></span><span>You wonder if baby needs separate meals or purees</span></li>
+          <li><span class="box"></span><span>You worry about gagging, choking, or doing something wrong</span></li>
+          <li><span class="box"></span><span>You’re not sure how much food to offer or whether baby is eating enough</span></li>
+          <li><span class="box"></span><span>You want a calm plan instead of piecing together advice online</span></li>
+          <li><span class="box"></span><span>You want someone to walk you through the process step by step</span></li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="footer">
+      <p>If you checked one or more boxes in the last section, you don’t need to buy your way into feeling ready with more feeding tools. You deserve a clear plan and support that helps you feel calm at the table.</p>
+      <p><strong>My 8-week Starting Solids Support walks you through the first two months step by step.</strong></p>
+      <a class="button" href="https://calendly.com/cali-guttman/8-week-starting-solids-support">Learn About Starting Solids Support</a>
+      <div class="tiny">Book a consult or learn more about 8-week support.</div>
+    </section>
+
+    <a class="back" href="../">Back to all booking options</a>
+  </main>
+</body>
+</html>
