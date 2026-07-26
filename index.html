@@ -168,6 +168,15 @@
       gap: 8px;
     }
 
+    .program-choice {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .program-choice .choice-actions {
+      justify-content: flex-start;
+    }
+
     .choice-actions a {
       text-decoration: none;
     }
@@ -566,7 +575,7 @@
 
       <div class="hero-actions">
         <div class="choices" aria-label="Main booking options">
-          <div class="choice">
+          <div class="choice program-choice">
             <div>
               <strong>Solid Start — 8-Week Program</strong>
               <span>Hands-on guidance for starting solids, allergens, textures, and balanced meals.</span>
